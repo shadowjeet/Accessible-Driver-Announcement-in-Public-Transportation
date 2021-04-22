@@ -3,7 +3,7 @@ import sys
 import strem_recognition_module
 import language_translator as lt
 import re
-from PyQt5 import QtCore, QtGui, QtWidgets
+
 from google.cloud import speech_v1 as speech
 # from google.cloud.speech_v1 import enums
 from google.cloud.speech_v1 import types
