@@ -18,9 +18,9 @@ translator_code = sys.argv[2]
 RATE = 16000
 CHUNK = int(RATE/10)
 
-#D:\Hioa\Y2 S3\Master Thesis Phase II Codes and Softwares\MTCode_V31\api_key\MasterT-a0d3d0a08dc2.json
 
-credentials = service_account.Credentials.from_service_account_file('D:/MTCode_V31/api_key/MasterT-a0d3d0a08dc2.json')
+
+credentials = service_account.Credentials.from_service_account_file('Location of API Key File')
 #def generateSpeechToText():
 data = []
 client = speech.SpeechClient(credentials=credentials)
@@ -53,63 +53,3 @@ with StreamRecognition(RATE, CHUNK) as stream:
         print(universal_data)
         #print(recognized_text)
         sys.stdout.flush()
-
-
-
-
-
-
-"""
-class ThreadClass(QtCore.QThread):
-    tick = QtCore.pyqtSignal(str)
-    #time = QtCore.pyqtSignal(str)
-    def __init__(self, parent=None):
-        super(ThreadClass, self).__init__(parent)
-        self.lan_code = ""
-
-    def run(self):
-        data = []
-        client = speech.SpeechClient(credentials=credentials)
-        config = types.RecognitionConfig(
-            encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
-            sample_rate_hertz=RATE, language_code=self.lan_code)
-        streaming_config = types.StreamingRecognitionConfig(
-            config=config, interim_results=True)
-
-        with StreamRecognition(RATE, CHUNK) as stream:
-            audio_generator = stream.speech_generator()
-            requests = (types.StreamingRecognizeRequest(audio_content=content)
-                        for content in audio_generator)
-
-            responses = client.streaming_recognize(streaming_config, requests)
-            while True:
-                fetched_text = strem_recognition_module.print_speech_loop(responses)#does not append text on screen
-                data.append(fetched_text)
-                finaldata = '.'.join(data)#does append text on screen
-                self.tick.emit(fetched_text)
-                if re.search(r'\b(terminate|over)\b', fetched_text, re.I):
-                    print("Exiting..")
-                    break
-num_chars = 0
-
-for response in responses:
-
-    if not response.results:
-        continue
-
-    result = response.results[0]
-    if not result.alternatives:
-        continue
-    transcript = result.alternatives[0].transcript
-    overwrite_chars = '' * (num_chars - len(transcript))
-
-    if not result.is_final:
-        sys.stdout.write(transcript + overwrite_chars + '\r')
-        sys.stdout.flush()
-
-        num_chars = len(transcript)
-
-    else:
-        transcription = transcript + overwrite_chars
-        print(transcription)
-        self.tick.emit(transcription)"""
