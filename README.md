@@ -3,3 +3,4 @@ Today, the information in public transport, especially when an unforeseen event 
 
 We need a glove.6B.50d.txt file in glovedata directory in order to me the GloVe algorithm to work.
 
+![Slide1](https://user-images.githubusercontent.com/44452792/115752204-2d959180-a39a-11eb-80b6-c41ee99373be.JPG)
