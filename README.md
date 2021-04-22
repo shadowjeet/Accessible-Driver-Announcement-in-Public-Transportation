@@ -1,0 +1,5 @@
+# Accessible-Driver-Announcement-in-Public-Transportation
+Today, the information in public transport, especially when an unforeseen event such as signal failure, platform change, etc. occurs, is largely provided by making an audio announcement. This, in many situations, is hardly understandable due to various factors, and it rarely helps people with hearing impairment. This work attempts towards an accessible driver announcement in public transportation based on a speech-to-text conversion and on-screen displays. Incorrect speech-to-text conversions are checked and corrected using a GloVe (Global Vector) based algorithm so that passengers get correct information. User testing of the system with different people including hard of hearing shows the effectiveness of such a solution. This work has been done, by taking the current system in public transportation in Oslo, Norway as a reference. However, the proposed solution and workflow can be applied to any mode of public transportation and anywhere in the world.
+
+We need a glove.6B.50d.txt file in glovedata directory in order to me the GloVe algorithm to work.
+
