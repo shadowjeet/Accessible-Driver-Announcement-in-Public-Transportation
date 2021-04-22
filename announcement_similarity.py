@@ -9,15 +9,15 @@ import language_translator as lt
 
 incorrectAnnouncement = sys.argv[1]
 translator_code = sys.argv[2]
-#D:/MTCode_V31/
+
 
 #Reading excel file to append data
-announcementFilePath = "D:/MTCode_V31/announcement_list.xlsx"
+announcementFilePath = "../announcement_list.xlsx"
 wb = oxl.load_workbook(announcementFilePath)
 sheet = wb.active
 append= False
 
-gloveFile = "D:/MTCode_V31/glovedata/glove.6B.50d.txt"
+gloveFile = "../glovedata/glove.6B.50d.txt"
 announcementFile = pd.read_excel(announcementFilePath)
 originalText = announcementFile['originalscript']
 
