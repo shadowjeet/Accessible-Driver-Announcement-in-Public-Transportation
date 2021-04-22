@@ -5,8 +5,8 @@ from google.oauth2 import service_account
 
 RATE = 16000
 CHUNK = int(RATE/10)
-#D:/Hioa/Y2 S3/Master Thesis Phase II Codes and Softwares/MTCode_V31/api_key/MasterT-a0d3d0a08dc2.json
-#credentials = service_account.Credentials.from_service_account_file('D:/Hioa/Y2 S3/Master Thesis Phase II Codes and Softwares/MTCode_V31/api_key/MasterT-a0d3d0a08dc2.json')
+
+#credentials = service_account.Credentials.from_service_account_file('Location')
 
 def print_speech_loop(responses):
     num_chars = 0
