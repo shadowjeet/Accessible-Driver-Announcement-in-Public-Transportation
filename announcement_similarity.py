@@ -20,10 +20,6 @@ append= False
 gloveFile = "D:/MTCode_V31/glovedata/glove.6B.50d.txt"
 announcementFile = pd.read_excel(announcementFilePath)
 originalText = announcementFile['originalscript']
-#announcedText = 'We cannot move the train'
-
-
-# originalText = ['Attention, passengers, we cannot move the train unless you keep out of the way of the closing doors. Stand clear', 'This is the last station']
 
 
 def loadGloveModel(gloveFile):
