@@ -7,10 +7,9 @@ credentials = service_account.Credentials.from_service_account_file('D:/MTCode_V
 
 translate_client = translate.Client(credentials=credentials)
 
-# correctedText = sys.argv[1]
-#
+# Example Scenario
 # text = "This metro and the station are now being evacuated please leave the metro now and follow staffs instruction to exit the stations"
-# target = 'no'
+# target = 'no' - Translating to norwegian language 
 
 def translator(text, target):
 
@@ -28,6 +27,6 @@ def universal(text):
         text = replaced
     return text
 
-# print(translator(text, target))
+
 
 
