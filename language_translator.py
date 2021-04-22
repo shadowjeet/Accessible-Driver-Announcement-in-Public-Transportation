@@ -3,7 +3,7 @@ from google.cloud import translate
 import sys
 # client = speech.SpeechClient(credentials=credentials)
 
-credentials = service_account.Credentials.from_service_account_file('D:/MTCode_V31/api_key/translatorApi.json')
+credentials = service_account.Credentials.from_service_account_file('Location of api key file')
 
 translate_client = translate.Client(credentials=credentials)
 
