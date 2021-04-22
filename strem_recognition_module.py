@@ -6,7 +6,7 @@ from google.oauth2 import service_account
 RATE = 16000
 CHUNK = int(RATE/10)
 
-#credentials = service_account.Credentials.from_service_account_file('Location')
+#credentials = service_account.Credentials.from_service_account_file('Location of API key file')
 
 def print_speech_loop(responses):
     num_chars = 0
