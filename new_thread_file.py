@@ -21,7 +21,7 @@ CHUNK = int(RATE/10)
 
 
 credentials = service_account.Credentials.from_service_account_file('Location of API Key File')
-#def generateSpeechToText():
+
 data = []
 client = speech.SpeechClient(credentials=credentials)
 config = types.RecognitionConfig(
