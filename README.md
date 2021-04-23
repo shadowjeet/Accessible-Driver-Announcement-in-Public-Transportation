@@ -7,7 +7,7 @@ IEEE Conference Paper: https://ieeexplore.ieee.org/document/9346303
 
 Presentation Video: https://youtu.be/RgW8dZEjnN8
 
-![Slide1](https://user-images.githubusercontent.com/44452792/115752204-2d959180-a39a-11eb-80b6-c41ee99373be.JPG)
+![Slide1](https://user-images.githubusercontent.com/44452792/115898438-da851280-a45d-11eb-9354-4b400b5afa53.jpg)
 ![Slide2](https://user-images.githubusercontent.com/44452792/115752284-3c7c4400-a39a-11eb-90e6-607bbb91da06.JPG)
 ![Slide3](https://user-images.githubusercontent.com/44452792/115752293-3dad7100-a39a-11eb-917d-6dba265a0365.JPG)
 ![Slide4](https://user-images.githubusercontent.com/44452792/115752296-3e460780-a39a-11eb-8da7-35ee9df3e139.JPG)
