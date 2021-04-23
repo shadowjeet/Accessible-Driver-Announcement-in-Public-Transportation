@@ -20,6 +20,7 @@ def translator(text, target):
     data = translation['translatedText']
     return data
 
+# Detecting Special Characters in Norwegien Language
 def universal(text):
     spDict = {'å': "&aring;", 'ø': "&oslash;", 'æ': "&aelig;"}
     for char in spDict:
